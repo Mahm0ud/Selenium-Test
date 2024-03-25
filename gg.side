@@ -1,0 +1,331 @@
+{
+  "id": "649faae7-9369-453f-9a6b-8932b224136f",
+  "version": "2.0",
+  "name": "gg",
+  "url": "",
+  "tests": [{
+    "id": "270ba99d-9ebe-4e7e-9019-74ee0df663f1",
+    "name": "gg",
+    "commands": [{
+      "id": "2176896d-959e-4ab1-8528-7afb94d17f79",
+      "comment": "",
+      "command": "open",
+      "target": "https://otv.verwalt-berlin.de",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "151fa6d3-d2a1-4c90-ab95-25f325900ca8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x746",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44ce1a21-c7a5-4a41-ae12-b6fc63e7a1b5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Termin buchen",
+      "targets": [
+        ["linkText=Termin buchen", "linkText"],
+        ["css=.link:nth-child(4) > .button", "css:finder"],
+        ["xpath=//a[contains(text(),'Termin buchen')]", "xpath:link"],
+        ["xpath=//form[@id='mainForm']/div/div/div/div/div/div/div/div/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ams/TerminBuchen/wizardng?sprachauswahl=de')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Termin buchen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38c04d0b-8c63-4a68-855c-fd40d7dda7a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.label-right > p",
+      "targets": [
+        ["css=.label-right > p", "css:finder"],
+        ["xpath=//div[@id='xi-div-1']/div[4]/label[2]/p", "xpath:idRelative"],
+        ["xpath=//label[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Ich erkläre hiermit, die Informationen auf dieser Seite gelesen und verstanden zu haben. Mit der Nutzung dieses Service-Angebots erteile ich meine Zustimmung zur Erhebung und Nutzung meiner persönlichen Daten.*')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3521265-f331-4872-9e9b-6c4b91e09f3a",
+      "comment": "",
+      "command": "click",
+      "target": "id=applicationForm:managedForm:proceed",
+      "targets": [
+        ["id=applicationForm:managedForm:proceed", "id"],
+        ["name=applicationForm:managedForm:proceed", "name"],
+        ["css=#applicationForm\\3AmanagedForm\\3Aproceed", "css:finder"],
+        ["xpath=//button[@id='applicationForm:managedForm:proceed']", "xpath:attributes"],
+        ["xpath=//form[@id='applicationForm:managedForm']/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Weiter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9d9ad9d-12ab-4d06-974e-39553c663a16",
+      "comment": "",
+      "command": "click",
+      "target": "id=xi-sel-400",
+      "targets": [
+        ["id=xi-sel-400", "id"],
+        ["name=sel_staat", "name"],
+        ["css=#xi-sel-400", "css:finder"],
+        ["xpath=//select[@id='xi-sel-400']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='xi-fs-19']/div/select", "xpath:idRelative"],
+        ["xpath=//div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "388d44a1-bbf1-4337-8dae-41da5f594d97",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=xi-sel-400",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "0ea161b4-8db7-4114-8d4d-b36ed2f26484",
+      "comment": "",
+      "command": "select",
+      "target": "id=xi-sel-400",
+      "targets": [],
+      "value": "label=Ägypten"
+    }, {
+      "id": "66e7cab5-b639-4cdb-bfa2-df373544abb3",
+      "comment": "",
+      "command": "click",
+      "target": "id=xi-sel-422",
+      "targets": [
+        ["id=xi-sel-422", "id"],
+        ["name=personenAnzahl_normal", "name"],
+        ["css=#xi-sel-422", "css:finder"],
+        ["xpath=//select[@id='xi-sel-422']", "xpath:attributes"],
+        ["xpath=//div[@id='xi-div-32']/div/select", "xpath:idRelative"],
+        ["xpath=//div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01c099a4-f6f7-4eb3-ac69-c63b3b363f44",
+      "comment": "",
+      "command": "select",
+      "target": "id=xi-sel-422",
+      "targets": [],
+      "value": "label=drei Personen"
+    }, {
+      "id": "2065cf0c-f565-4d75-867b-9f770ed7f5f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=xi-sel-427",
+      "targets": [
+        ["id=xi-sel-427", "id"],
+        ["name=lebnBrMitFmly", "name"],
+        ["css=#xi-sel-427", "css:finder"],
+        ["xpath=//select[@id='xi-sel-427']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='xi-fs-19']/div[3]/select", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "350f8f97-3de1-4a48-af2c-209ca862722f",
+      "comment": "",
+      "command": "select",
+      "target": "id=xi-sel-427",
+      "targets": [],
+      "value": "label=ja"
+    }, {
+      "id": "bcfb571c-c283-4506-9ae6-dede56597387",
+      "comment": "",
+      "command": "click",
+      "target": "id=xi-sel-428",
+      "targets": [
+        ["id=xi-sel-428", "id"],
+        ["name=fmlyMemNationality", "name"],
+        ["css=#xi-sel-428", "css:finder"],
+        ["xpath=//select[@id='xi-sel-428']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='xi-fs-19']/div[4]/select", "xpath:idRelative"],
+        ["xpath=//fieldset/div[4]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1b69fef-4db9-4393-b560-97b7a6070aec",
+      "comment": "",
+      "command": "select",
+      "target": "id=xi-sel-428",
+      "targets": [],
+      "value": "label=Ägypten"
+    }, {
+      "id": "24ca0e70-6f63-4f19-9d04-27a214403f5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.kachel-287-0-2 p",
+      "targets": [
+        ["css=.kachel-287-0-2 p", "css:finder"],
+        ["xpath=//div[@id='xi-div-30']/div[2]/label/p", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/div/div[2]/label/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Aufenthaltstitel - verlängern')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4abbf928-d8c8-4e2f-b1f0-a0db83313783",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,691)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1135008a-7eda-419b-af72-0abbd8ab54dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.accordion-287-0-2-4 p",
+      "targets": [
+        ["css=.accordion-287-0-2-4 p", "css:finder"],
+        ["xpath=//div[@id='inner-287-0-2']/div/div[5]/label/p", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div[5]/label/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Familiäre Gründe')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e444a677-86f5-4a5c-8d66-b71932bc3bb2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level3:nth-child(3) > label",
+      "targets": [
+        ["css=.level3:nth-child(3) > label", "css:finder"],
+        ["xpath=//div[@id='inner-287-0-2']/div/div[6]/div/div[3]/label", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Aufenthaltserlaubnis für Ehepartner, Eltern und Kinder von ausländischen Familienangehörigen (§§ 29-34)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a6415cd-851a-4864-80b0-83be274a6ef1",
+      "comment": "",
+      "command": "waitForElementNotPresent",
+      "target": "css= div[style*=\"opacity: 0.6\"]",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "88735994-64dd-4420-a8ec-9535b01b663f",
+      "comment": "",
+      "command": "click",
+      "target": "id=applicationForm:managedForm:proceed",
+      "targets": [
+        ["css=.errorMessage", "css:finder"],
+        ["xpath=//div[@id='messagesBox']/ul/li", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "682334d4-12f5-4750-a2a2-807183a459f8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 0;",
+      "targets": [],
+      "value": "iterator"
+    }, {
+      "id": "710ca52f-7ec1-46fb-81bd-7a15636b26f5",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f49616f-08a5-440f-8d76-0dc430740277",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${iterator}+1;",
+      "targets": [],
+      "value": "iterator"
+    }, {
+      "id": "988979c9-c817-4e1e-958e-9f0aa928eade",
+      "comment": "",
+      "command": "echo",
+      "target": "${iterator}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a80699ba-946d-41da-81e9-e60395f69d4f",
+      "comment": "",
+      "command": "pause",
+      "target": "4500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebca6eca-791f-41c3-9b69-647995f31598",
+      "comment": "",
+      "command": "click",
+      "target": "id=applicationForm:managedForm:proceed",
+      "targets": [
+        ["css=.errorMessage", "css:finder"],
+        ["xpath=//div[@id='messagesBox']/ul/li", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cddd7f05-9412-44b6-8625-25db9b7750a4",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//li[@class=\"errorMessage\"]",
+      "targets": [],
+      "value": "errorMessage"
+    }, {
+      "id": "461032d4-897d-4c18-81ad-0355ec57b265",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${errorMessage} != \"\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81e831e4-1980-4d16-81ab-b545044e7860",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.open(\"http://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=No+Appointment+was+found\")",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d418a75b-c95a-48c3-a79a-dc4f7b46b34e",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "x",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "404a217c-2d62-4296-b950-2ebfc9c93f03",
+      "comment": "",
+      "command": "echo",
+      "target": "${iterator}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e524260d-8808-4d5c-be44-cba2431551c3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${x}",
+      "targets": [],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "Alert",
+      "windowTimeout": 2000
+    }]
+  }, {
+    "id": "f9d34edc-cb75-4203-be1b-29705ba3c313",
+    "name": "ErrorMessage",
+    "commands": [{
+      "id": "9d122293-9165-470b-88cd-cba4003c048c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.open(\"http://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=No+Appointment+was+found\")",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7accd886-7899-4bcf-9379-55227c358b4f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["270ba99d-9ebe-4e7e-9019-74ee0df663f1"]
+  }],
+  "urls": ["https://otv.verwalt-berlin.de/"],
+  "plugins": []
+}
